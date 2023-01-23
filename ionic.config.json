@@ -1,0 +1,7 @@
+{
+  "name": "dictionary-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
