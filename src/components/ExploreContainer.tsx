@@ -14,7 +14,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
     e.preventDefault(); // Prevents page from refresh
     axios
       .get(`https://api.api-ninjas.com/v1/dictionary?word=${searchTerm}`, {
-        headers: { "X-Api-Key": "SvM5Za25kcZFYQMxECRu0A==AbwbSKvSGIBegGvq" },
+        headers: { "X-Api-Key": process.env.REACT_APP_PASSWORD },
       })
       .then((response) => setSearchResult(response.data.definition))
       .catch((error) => {
